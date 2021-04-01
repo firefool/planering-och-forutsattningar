@@ -15,7 +15,7 @@ export class HomePage extends Page {
         let i = new Image('../images/byte.jpg');
         i.appendToElement(this.element);
        
-        let styleString = 'width: 300px; height: 80px; font-size: 26px; margin: 10px;';
+        let styleString = 'width: 300px; height: 80px; font-size: 26px; margin: 10px; margin-bottom: 55px;';
         let b = new Button('Prototype Plan');
         b.setStyleString(styleString);
         b.appendToElement(this.element);
