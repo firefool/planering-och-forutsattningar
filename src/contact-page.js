@@ -14,6 +14,9 @@ export class ContactPage extends Page {
         }
     
     getElementString() {
-        return '<div style="text-align: center;"><h3>Contact</h3></div>';
+        return `<div style="text-align: center;">
+                    <h3>Contact</h3>
+                    <p class="contentText">Contact me at: <a class="mailLink" href="mailto:jonasyzermans@gmail.com">Jonasyzermans@gmail.com</a> </p>
+                </div>`;
     }
 }

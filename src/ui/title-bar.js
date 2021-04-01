@@ -1,4 +1,5 @@
 import {BaseElement} from './base-element.js';
+import {Button} from './button.js';
 
 export class TitleBar extends BaseElement {
     
@@ -18,8 +19,11 @@ export class TitleBar extends BaseElement {
     getElementString() {
         let links = '';
         for (let link of this.links)
-            links += `<a class="mdl-navigation__link"
-                        >${link.title}</a>\n`;
+        {
+            links += `<a class="mdl-navigation__link menuLink"
+                        >${link.title}</a>\n`;            
+        }
+
         return `
             <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
                 <header class="mdl-layout__header">

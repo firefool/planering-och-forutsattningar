@@ -1,0 +1,36 @@
+.menuLink{
+    -webkit-transition: color 0.5s, font-size 0.5s;
+    transition: color 0.5s, font-size 0.5s;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .menuLink:hover{
+    font-size: 20px;
+    color: #ff9100;;
+  }
+
+  .contentText{
+    font-size: 16px;
+    color: #00051b
+  }
+
+  .mailLink{
+    font-size: 16px;
+    color: #4265ff
+  }
+
+  .mailLink:hover{
+    color: #ff9100;;
+  }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ff9100;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+  }
