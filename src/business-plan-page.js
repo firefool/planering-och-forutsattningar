@@ -11,9 +11,19 @@ export class BusinessPlanPage extends Page {
     
     createElement() {
         super.createElement();
-        }
+
+        let i = new Image('../images/underkonstruktion2.png');
+        i.appendToElement(this.element);
+
+    }
     
     getElementString() {
-        return '<div style="text-align: center;"><h3>Business Plan</h3></div>';
+        return `<div style="margin: 20px";><h3>Affärsplan - Bytesappen - Sammanfattning</h3>
+        <p>
+        Bytesappen är en simpel applikation för att tillåta användare att hitta andra lokala användare som har produkter, prylar eller tjänster som de är villiga att byta. 
+        Målet med projektet är att utveckla lokala marknader för byteshandel vilket kommer hjälpa till att minska miljöpåverkan som kommer utav transporter och onödiga köp. 
+        </p>
+
+        </div>`;
     }
 }
