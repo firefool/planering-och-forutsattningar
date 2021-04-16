@@ -34,7 +34,7 @@ export class HomePage extends Page {
         b = new Button('App');
         b.setStyleString(styleString);
         b.appendToElement(this.element);
-        b.element.click(() => window.location.href = "../app.html");
+        b.element.click(() => window.location.href = "../app/trade-app/src/app.html");
     }
     
     getElementString() {
