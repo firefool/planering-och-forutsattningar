@@ -5,7 +5,6 @@ class LoginTemp extends React.Component
 
     state = {
         name: "",
-        isLoggedIn: false
     };
 
     onChange = e => 
@@ -20,8 +19,12 @@ class LoginTemp extends React.Component
     handleSubmit = e => 
     {
         e.preventDefault();
-        this.props.setUserNameProp(this.state.name);
+        sessionStorage.setItem("loggedIn", true);
+        sessionStorage.setItem("userName", this.state.name);
+        this.forceUpdate();
+        //this.props.setUserNameProp(this.state.name);
     }
+
 
     render() 
     {

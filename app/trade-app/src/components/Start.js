@@ -12,37 +12,16 @@ class Start extends React.Component
     {
         super(props);
         this.state = {
-            isLoggedIn: false,
-            userName: ""
         }
     }
 
-    setUserName = userName => 
-    {
-        console.log(userName);
-        this.setState({
-            userName: userName,
-            isLoggedIn: true
-        })
-        console.log(this.state.isLoggedIn);
-    }
-
-    logIn(){
-        this.state.isLoggedIn = true;
-    }
 
     render() 
     {
         let welcomeMessage;
-        const isLoggedIn = this.state.isLoggedIn;
-        if(!isLoggedIn)
-        {
-            welcomeMessage = <LoginTemp setUserNameProp={this.setUserName}/>
-        }
-        else
-        {
-            welcomeMessage = <Welcome userNameProp={this.state.userName}/>
-        }
+  
+        welcomeMessage = <Welcome />
+
         return (
             <div>
                 <h1>START</h1>

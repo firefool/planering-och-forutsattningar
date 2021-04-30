@@ -6,7 +6,7 @@ class Welcome extends React.Component
     {
         return (
                 <div>
-                    <h3>Welcome! {this.props.userNameProp}</h3>
+                    <h3>Welcome! {sessionStorage.getItem("userName")}</h3>
                 </div>
         );
       }
