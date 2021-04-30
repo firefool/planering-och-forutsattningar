@@ -4,6 +4,8 @@ import Header from "./Header"
 import ItemList from "./ItemList"
 import InputItem from "./InputItem"
 
+import Footer from "./Footer"
+
 import { v4 as uuidv4 } from "uuid"
 
 class MarketContainer extends React.Component 
@@ -87,17 +89,13 @@ class MarketContainer extends React.Component
     render() 
     {
         return (
-            <div className="container">
-                <div className="inner">
-                    <Header />
+                <div>
                     <InputItem 
                             addItemProps = {this.addItem} />
                     <ItemList 
                             items = {this.state.items} 
                             deleteItemProps = {this.deleteItem} />
-                </div>
-            </div>
-            
+                </div>            
         )
     }
 }
