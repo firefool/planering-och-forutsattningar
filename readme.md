@@ -6,4 +6,4 @@ Hoppas jag fick ihop tillräckligt för g eller komplettering.
 
 För att starta "appen":
 cd app/trade-app
-npm run
+npm start
